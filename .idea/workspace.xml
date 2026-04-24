@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924fbc29-c647-4f50-82a8-26cdb537640b" name="Changes" comment="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="924fbc29-c647-4f50-82a8-26cdb537640b" name="Changes" comment="добавление api-tests.ymi">
+      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/Wordle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/yandex/practicum/Wordle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +14,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -36,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Wordle.executor": "Run",
-    "JUnit.All in java-wordle4j.executor": "Run",
-    "JUnit.ru.yandex.practicum in java-wordle4j.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Git/IdeaProjects/java-wordle4j"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Wordle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in java-wordle4j.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ru.yandex.practicum in java-wordle4j.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Git/IdeaProjects/java-wordle4j&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.ru.yandex.practicum in java-wordle4j">
+}</component>
+  <component name="RunManager" selected="JUnit.All in java-wordle4j">
     <configuration name="Wordle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.yandex.practicum.Wordle" />
       <module name="java-wordle4j" />
@@ -97,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ru.yandex.practicum in java-wordle4j" />
         <item itemvalue="JUnit.All in java-wordle4j" />
+        <item itemvalue="JUnit.ru.yandex.practicum in java-wordle4j" />
         <item itemvalue="Application.Wordle" />
       </list>
     </recent_temporary>
@@ -135,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776993324504</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавление api-tests.ymi">
+      <option name="closed" value="true" />
+      <created>1777033872238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777033872238</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +152,7 @@
     <MESSAGE value="Действительно, не закоммичены были исключения. IDEA обновилась во время работы над проектом, у меня все поломалось, видимо из-за этого" />
     <MESSAGE value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток." />
     <MESSAGE value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты." />
-    <option name="LAST_COMMIT_MESSAGE" value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты." />
+    <MESSAGE value="добавление api-tests.ymi" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление api-tests.ymi" />
   </component>
 </project>

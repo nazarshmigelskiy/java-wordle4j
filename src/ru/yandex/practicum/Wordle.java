@@ -61,11 +61,9 @@ public class Wordle {
                     log.write(e.getMessage() + "\n");
                 }
             }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }
     }
