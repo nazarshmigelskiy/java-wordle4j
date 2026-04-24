@@ -1,11 +1,12 @@
 package ru.yandex.practicum;
 
+import Exceptions.NotRightWordLengthException;
+import Exceptions.NotRussianLettersException;
+import Exceptions.WordNotFoundInDictionaryException;
+
 import java.io.IOException;
 import java.io.Writer;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+
 
 /*
 в этом классе хранится словарь и состояние игры
@@ -46,7 +47,7 @@ public class WordleGame {
         String pattern = dictionary.getLetterEquality(formateWord(userInput), answer);
         steps--;
         advisor.update(userInput, pattern);
-        return pattern;
+        return pattern + " Оставшееся количество попыток: " + steps;
     }
 
 
@@ -79,6 +80,17 @@ public class WordleGame {
 
     }
 
+    public String getRules() {
+        return "Правила игры: необходимо отгадать загаданное слово из 5 букв," +
+                " на это вам дается 6 попыток.\n Результатом ввода будет строка из пяти символов," +
+                " где каждый из них соответствует букве ввода:\n" +
+                "- — им отмечается буква, которой НЕТ в загаданном слове;\n" +
+                "+ — этим символом отмечается буква, которая ЕСТЬ в загаданном слове и находится на правильной позиции;\n" +
+                "^ — так отмечается буква, которая ЕСТЬ в загаданном слове, но находится в другом месте.\n" +
+                " Игра заканчивается, если вы угадали верное слово или если у вас закончились попытки.\n" +
+                " Для принудительного выхода из игры впишите в консоль 'стоп'.\n" +
+                "Желаем удачи!";
+    }
 
     public int getSteps() {
         return steps;

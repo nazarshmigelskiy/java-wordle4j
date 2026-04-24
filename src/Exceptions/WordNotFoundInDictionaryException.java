@@ -1,8 +1,8 @@
-package ru.yandex.practicum;
+package Exceptions;
 
 public class WordNotFoundInDictionaryException extends Exception {
 
-    WordNotFoundInDictionaryException(String message) {
+    public WordNotFoundInDictionaryException(String message) {
         super(message);
     }
 }

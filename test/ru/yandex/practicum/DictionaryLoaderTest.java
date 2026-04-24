@@ -1,4 +1,5 @@
 package ru.yandex.practicum;
+import Exceptions.DictionaryIsEmptyException;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;

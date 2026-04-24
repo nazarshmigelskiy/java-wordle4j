@@ -1,7 +1,7 @@
-package ru.yandex.practicum;
+package Exceptions;
 
 public class NotRussianLettersException extends Exception {
-    NotRussianLettersException(String message) {
+    public NotRussianLettersException(String message) {
         super(message);
     }
 

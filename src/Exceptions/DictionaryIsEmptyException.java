@@ -1,4 +1,4 @@
-package ru.yandex.practicum;
+package Exceptions;
 
 public class DictionaryIsEmptyException extends Exception {
     public DictionaryIsEmptyException(String message) {

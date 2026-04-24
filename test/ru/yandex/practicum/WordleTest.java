@@ -1,5 +1,8 @@
 package ru.yandex.practicum;
 
+import Exceptions.NotRightWordLengthException;
+import Exceptions.NotRussianLettersException;
+import Exceptions.WordNotFoundInDictionaryException;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -18,14 +21,14 @@ class WordleTest {
     void shouldReturnAllPluses() throws WordNotFoundInDictionaryException, IOException, NotRussianLettersException, NotRightWordLengthException {
         WordleGame game = new WordleGame(log, dictionary, 6, "ааааа");
         String result = game.compareWords("ааааа");
-        assertEquals("+++++", result);
+        assertEquals("+++++ Оставшееся количество попыток: 5", result);
     }
 
     @Test
     void shouldReturnMixedPattern() throws WordNotFoundInDictionaryException, IOException, NotRussianLettersException, NotRightWordLengthException {
         WordleGame game = new WordleGame(log, dictionary, 6, "ааааб");
         String result = game.compareWords("абвгд");
-        assertEquals("+^---", result);
+        assertEquals("+^--- Оставшееся количество попыток: 5", result);
     }
 
     @Test

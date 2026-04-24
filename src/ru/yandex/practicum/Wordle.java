@@ -1,10 +1,12 @@
 package ru.yandex.practicum;
 
-import java.io.FileNotFoundException;
+import Exceptions.NotRightWordLengthException;
+import Exceptions.NotRussianLettersException;
+import Exceptions.WordNotFoundInDictionaryException;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -26,13 +28,18 @@ public class Wordle {
             WordleGame game = new WordleGame(log, dictionary, 6, dictionary.getRandomWord());
             log.write(String.format("Загаданное слово: %s%n", game.getAnswer()));
             Scanner scanner = new Scanner(System.in);
+            System.out.println(game.getRules());
             System.out.println("Введите слово:");
             while (game.getSteps() != 0 && !game.isWinner()) {
                 try {
                     String userInput = scanner.nextLine();
+                    if (game.formateWord(userInput).equals("стоп")) {
+                        System.out.println("Выход из игры.");
+                        break;
+                    }
                     if (userInput.isBlank()) {
-                        userInput = game.getAdvise();
-                        System.out.println(userInput);
+                        System.out.printf("%nПодсказка: %s%n", game.getAdvise());
+                        continue;
                     }
                     String comparedWord = game.compareWords(userInput);
                     if (comparedWord.equals("+++++")) {

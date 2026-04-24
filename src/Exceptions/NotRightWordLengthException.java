@@ -1,8 +1,8 @@
-package ru.yandex.practicum;
+package Exceptions;
 
 public class NotRightWordLengthException extends Exception {
 
-    NotRightWordLengthException(String message) {
+    public NotRightWordLengthException(String message) {
         super(message);
     }
 }

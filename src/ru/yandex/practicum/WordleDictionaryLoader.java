@@ -1,5 +1,7 @@
 package ru.yandex.practicum;
 
+import Exceptions.DictionaryIsEmptyException;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
