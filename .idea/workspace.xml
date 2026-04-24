@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="924fbc29-c647-4f50-82a8-26cdb537640b" name="Changes" comment="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток.">
+    <list default="true" id="924fbc29-c647-4f50-82a8-26cdb537640b" name="Changes" comment="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/DictionaryIsEmptyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/DictionaryIsEmptyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/NotRightWordLengthException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/NotRightWordLengthException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/NotRussianLettersException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/NotRussianLettersException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/WordNotFoundInDictionaryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/WordNotFoundInDictionaryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/Wordle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/yandex/practicum/Wordle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleDictionaryLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleDictionaryLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/yandex/practicum/WordleGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ru/yandex/practicum/DictionaryLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ru/yandex/practicum/DictionaryLoaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ru/yandex/practicum/WordleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ru/yandex/practicum/WordleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
     "last_opened_file_path": "C:/Git/IdeaProjects/java-wordle4j"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in java-wordle4j">
+  <component name="RunManager" selected="JUnit.ru.yandex.practicum in java-wordle4j">
     <configuration name="Wordle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.yandex.practicum.Wordle" />
       <module name="java-wordle4j" />
@@ -108,9 +97,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ru.yandex.practicum in java-wordle4j" />
         <item itemvalue="JUnit.All in java-wordle4j" />
         <item itemvalue="Application.Wordle" />
-        <item itemvalue="JUnit.ru.yandex.practicum in java-wordle4j" />
       </list>
     </recent_temporary>
   </component>
@@ -138,13 +127,22 @@
       <option name="project" value="LOCAL" />
       <updated>1776956376443</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты.">
+      <option name="closed" value="true" />
+      <created>1776993324504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776993324504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Не разобрался как протестировать исключение при пустом словаре, пытался создать новый пустой файл и загружать через него, но чет не справился" />
     <MESSAGE value="Действительно, не закоммичены были исключения. IDEA обновилась во время работы над проектом, у меня все поломалось, видимо из-за этого" />
     <MESSAGE value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток." />
-    <option name="LAST_COMMIT_MESSAGE" value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток." />
+    <MESSAGE value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты." />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенес исключения в отдельный пакет, переработал логику подсказок, добавил правила, добавил досрочный выход из программы по команде, добавил вывод оставшихся попыток, дополнил тесты." />
   </component>
 </project>
