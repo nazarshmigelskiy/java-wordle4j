@@ -1,0 +1,7 @@
+package exceptions;
+
+public class DictionaryIsEmptyException extends Exception {
+    public DictionaryIsEmptyException(String message) {
+        super(message);
+    }
+}
