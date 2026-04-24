@@ -1,8 +1,8 @@
 package ru.yandex.practicum;
 
-import Exceptions.NotRightWordLengthException;
-import Exceptions.NotRussianLettersException;
-import Exceptions.WordNotFoundInDictionaryException;
+import exceptions.NotRightWordLengthException;
+import exceptions.NotRussianLettersException;
+import exceptions.WordNotFoundInDictionaryException;
 
 import java.io.IOException;
 import java.io.Writer;

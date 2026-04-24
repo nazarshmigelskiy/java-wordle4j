@@ -77,7 +77,7 @@
       <module name="java-wordle4j" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exceptions.*" />
+          <option name="PATTERN" value="exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
